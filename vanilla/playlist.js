@@ -1,7 +1,4 @@
 {
-  const playlistEmpty = new Event('playlistEmpty');
-  const playlistPopulated = new Event('playlistPopulated');
-
   const getElement = function() {
     return document.querySelector('#playlist');
   }
@@ -9,12 +6,6 @@
   const toggleSong = function(songIndex) {
     document.querySelectorAll('.playlist-item')[songIndex]
       .classList.toggle('selected');
-
-    if (document.querySelector('.selected')) {
-      document.dispatchEvent(playlistPopulated);
-    } else {
-      document.dispatchEvent(playlistEmpty);
-    }
   }
 
   window.addEventListener('load', () => {
