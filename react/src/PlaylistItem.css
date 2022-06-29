@@ -1,0 +1,15 @@
+.playlist-item {
+  cursor: pointer;
+}
+
+.selected {
+  background-color: antiquewhite;
+}
+
+.artist {
+  font-weight: bold;
+}
+
+.title::before {
+  content: ' | ';
+}

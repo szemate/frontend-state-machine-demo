@@ -1,0 +1,32 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 28pt;
+  text-align: center;
+}
+
+footer {
+  font-size: 8pt;
+}
+
+.selected {
+  background-color: antiquewhite;
+}
+
+.artist {
+  font-weight: bold;
+}
+
+.title::before {
+  content: ' | ';
+}
+
+.icon {
+  width: 64px;
+}
+
+.playlist-item,
+.icon {
+  cursor: pointer;
+}
